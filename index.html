@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweeter</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-content">
+            <div class="circle">
+                <img src="assets/twitter.png" alt="Tweeter logo" class="logo-img">
+            </div>
+            <span class="logo-text">Tweeter</span>
+        </div>
+    </header>
+    
+    <main class="container">
+
+        <section class="tweet-box">
+            <div class="avatar"></div>
+
+            <div class="input">
+                <textarea placeholder="What's happening?" id="textarea" maxlength="160"></textarea>
+
+                <div class="tweet-actions">
+                    <span class="char-count" id="char-count">160 char remaining</span>
+                    <button class="tweet-button" id="tweet-button">tweeet</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tweet-card">
+            <div class="avatar"></div>
+
+            <div class="tweet-content">
+                <div class="tweet-header">
+                    <span class="name">Ivan Ibarra</span>
+                    <span class="username">@jesus.ibarra.utrgv</span>
+                    <span class="date">- 5hr</span>
+                </div>
+
+                <p class="tweet-text">
+                    This is a sample tweet for the project.
+                </p>
+
+                <div class="tweet-icons">
+                    <div class="icon-group">
+                        <i class="fa-regular fa-comment"></i>
+                        <span class="icon-count">1</span>
+                    </div>
+
+                    <div class="icon-group">
+                        <i class="fa-solid fa-retweet"></i>
+                        <span class="icon-count"></span>
+                    </div>
+
+                    <div class="icon-group">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="icon-count">8</span>
+                    </div>
+
+                    <div class="icon-group">
+                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                        <span class="icon-count"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
